@@ -1,0 +1,10 @@
+langue:python
+	python:
+	-36
+before_install:
+	-python-versioon
+	-pip install-U pip
+	-pip install-U pytest
+	-pip install-U pytest-cov
+scrip:
+	-pytest-cov=com.mongoloides.com/mongoloides/test/

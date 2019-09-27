@@ -1,7 +1,9 @@
+import pytest
 from com.mongoloides.conta_corrente import ContaCorrente
 
-conta = ContaCorrente(1802, "Wesley", saldo=10)
 
-
-def test_alterarNome():
-    assert conta.alterarNome "Guilherme") != nomeCorrentista
+def test_ContaCorrente():
+    conta = ContaCorrente(4, "guilherme", 0)
+    assert conta.alterarNome("Lucas") == conta.nomeCorrentista
+    assert conta.deposito(300) == 300
+    assert conta.saque(300) == 0

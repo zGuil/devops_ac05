@@ -1,3 +1,4 @@
+
 class ContaCorrente:
 
     def __init__(self, numero, nomeCorrentista, saldo=0.0):
@@ -7,9 +8,12 @@ class ContaCorrente:
 
     def alterarNome(self, nomeCorrentista):
         self.nomeCorrentista = nomeCorrentista
+        return self.nomeCorrentista
 
     def deposito(self, valor):
         self.saldo += valor
+        return self.saldo
 
     def saque(self, valor):
         self.saldo -= valor
+        return self.saldo
